@@ -2,7 +2,7 @@ body {
     font-family: 'Libre Baskerville', serif;
     background-image: url("../img/starscape-by-paul-volkmer.jpg");
     background-position: center;
-    background-color: #444;
+    background-color: #181818;
     color: #5bd;
     padding: 0;
     margin: 0;
@@ -13,11 +13,6 @@ body {
 header {
     background-image: linear-gradient(180deg, #963, rgba(0,0,0,0));
     padding: 1em;
-}
-
-header p {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0), #282828 50%, rgba(0,0,0,0));
-    padding: 1%;
 }
 
 .break {
@@ -63,7 +58,8 @@ section {
 }
 
 figcaption, p {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0), #282828 50%, rgba(0,0,0,0));
+    background-image: linear-gradient(90deg, rgba(0,0,0,0), #181818 33.33%, #181818 66.66%, rgba(0,0,0,0));
+    padding: 1%;
 }
 
 img {
@@ -89,6 +85,7 @@ footer {
 
 footer p {
     margin: .5em;
+    background-image: none;
 }
 
 .group {
@@ -152,6 +149,14 @@ footer p {
     #skills {
         width: 75%;
         margin: auto;
+    }
+
+    #skills p {
+        background-image: linear-gradient(90deg, #181818, rgba(0,0,0,0) 50%);
+    }
+
+    #skills p:nth-child(even) {
+        background-image: linear-gradient(270deg, #181818, rgba(0,0,0,0) 50%);
     }
 
     .flag {
